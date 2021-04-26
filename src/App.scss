@@ -1,0 +1,39 @@
+$square-dim: 50px;
+$blue-color: blue;
+$white-color: white;
+
+.main-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+.main-square-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-square {
+  width: $square-dim;
+  height: $square-dim;
+  transition: background-color 0.5s;
+  border: 1px solid black;
+  background-color: $white-color;
+  box-sizing: border-box;
+  &--blue {
+    background-color: $blue-color;
+  }
+}
+.main-mode-picker-wrap {
+  margin-bottom: 50px;
+}
+.main-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: unset;
+  background-color: $blue-color;
+  color: $white-color;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
